@@ -1,0 +1,20 @@
+.about-text {
+    color: #333;
+    line-height: 1.6;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(0, 61, 215, 0.05);
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-image {
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

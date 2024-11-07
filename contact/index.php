@@ -5,10 +5,10 @@ ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank)
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', ':3306');
+define('DB_HOST', 'localhost:3306');
+define('DB_USER', 'ramon');
+define('DB_PASS', 'A*u.0]Oc!p2i.[zu');
+define('DB_NAME', 'contact_boot');
 
 date_default_timezone_set('Europe/Brussels');
 
@@ -57,7 +57,7 @@ if (isset($_POST['btnSubmit'])) {
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
-            header('Location: ./formchecking_thanks.php?name=' . urlencode($name));
+            header('Location: ./');
             exit();
         } // the query failed
         else {
@@ -76,7 +76,7 @@ if (isset($_POST['btnSubmit'])) {
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
@@ -84,16 +84,17 @@ if (isset($_POST['btnSubmit'])) {
 </head>
 
 <body>
-    <header>
+   <header>
         <nav>
             <ul>
-                <li><a href="../">Home</a></li>
-                <li><a href="../vloot/">Vloot</a></li>
-                <li><a href="../Route/">Routes</a></li>
-                <li><a class="logo" href="../"><img src="../img/Logo Boot bedrijf.png" alt="Logo" width="150px"></a></li>
-                <li><a href="../over ons/">Over ons</a></li>
-                <li><a href="../nieuws/">Nieuws</a></li>
-                <li><a href="./">Contact</a></li>
+                <li><a class="navlinks, nav-left" href="../">Home</a></li>
+                <li><a class="navlinks, nav-left" href="../vloot/">Vloot</a></li>
+                <li><a class="navlinks, nav-left" href="../Route/">Routes</a></li>
+                <li><a href="../"><img src="../img/Logo Boot bedrijf.png" alt="Logo"
+                            width="150px"></a></li>
+                <li><a class="navlinks, nav-right" href="../over ons/">Over ons</a></li>
+                <li><a class="navlinks, nav-right" href="../nieuws/">Nieuws</a></li>
+                <li><a class="navlinks, nav-right" href="../contact/">Contact</a></li>
             </ul>
         </nav>
     </header>

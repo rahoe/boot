@@ -1,23 +1,4 @@
-/* page */
-html {
-	font-size: 62.5%;
-	font-family: sans-serif;
-}
 
-body {
-	font-size: 1.6rem;
-	margin: 0;
-}
-
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
-.container {
-	margin: 0 auto;
-	padding: 0 1rem;
-	max-width: 1280px;
-}
 
 /* form-fields */
 /* zie demo bestanden bij de theorie voor meer CSS ;) */
@@ -35,9 +16,11 @@ label,
 input[type=submit] {
 	margin-top: 3rem;
 }
+
 input[type=submit] {
 	padding: .5em 2em;
 }
+
 label {
 	display: block;
 	margin-bottom: .2em;
@@ -47,6 +30,7 @@ label {
 .message {
 	font-size: 1.4rem;
 }
+
 .message.error {
 	color: #b90e0a;
 }
